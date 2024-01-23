@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script >
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+  theme: {
+    fontSize: {
+      sm: '0.4rem',
+      base: '8rem',
+      xl: '1rem',
+      '2xl': '1.2rem',
+      '3xl': '1.5rem',
+      '4xl': '1.8rem',
+      '5xl': '2.1rem',
+    }
+  }
+}
+    </script>
+  </head>
+  <body>
+    <header class="bg-white">
+      <div
+        class="fixed z-50 top-0 inset-x-0 bg-white px-8 h-16 flex text-center justify-between space-between border-b"
+      >
+        <div class="flex space-x-6 text-center">
+          <div class="flex items-center space-x-4 text-center">
+            <img src="" alt="travelry logo" class="h-10" />
+            <p class="text-black font-medium text-lg">Travelry</p>
+          </div>
+          <div
+            class="*:flex flex *:p-2 *:text-center *:items-center space-x-2 *:text-md *:text-gray-500 *:text-sm"
+          >
+            <div
+              class="hover:border-b hover:border-pink-500 hover:text-black hover:font-medium"
+            >
+              <p class="text-center w-full">HOME</p>
+            </div>
+            <div
+              class="hover:border-b hover:border-pink-500 hover:text-black hover:font-medium"
+            >
+              <p class="text-center w-full">SEARCH</p>
+            </div>
+            <div
+              class="hover:border-b hover:border-pink-500 hover:text-black hover:font-medium"
+            >
+              <p class="text-center w-full">TOURS 2021</p>
+            </div>
+            <div
+              class="hover:border-b hover:border-pink-500 hover:text-black hover:font-medium"
+            >
+              <p class="text-center w-full">HOT DEALS</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex space-x-6 items-center">
+          <div class="flex space-x-4">
+            <p class="text-black text-sm">SAVED OFFERS</p>
+            <i>icon</i>
+          </div>
+          <div>
+            <img src="" alt="profile" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="mt-5 bg-white relative top-20">
+      <div class="px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex space-x-2">
+            <div class="text-5xl font-normal">16</div>
+            <div class="text-sm justify-center flex flex-col">
+              <div class="text-black font-medium">Wednesday</div>
+              <div class="text-gray-400">September, 2020</div>
+            </div>
+          </div>
+          <div class="flex shadow-md rounded-lg h-16 border">
+            <div
+              class="flex items-center text-start space-between space-x-12 px-6 border-r"
+            >
+              <div>
+                <div>
+                  <p class="text-gray-400 text-xs">Select Place</p>
+                </div>
+                <div>
+                  <p class="font-medium text-black text-sm">All Places</p>
+                </div>
+              </div>
+              <div>
+                <i>icon</i>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center text-start space-between space-x-12 px-6 border-r"
+            >
+              <div>
+                <div>
+                  <p class="text-gray-400 text-xs">How Many Days?</p>
+                </div>
+                <div>
+                  <p class="font-medium text-black text-sm">One Week</p>
+                </div>
+              </div>
+              <div>
+                <i>icon</i>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center text-start space-between space-x-12 px-6 border-r"
+            >
+              <div>
+                <div>
+                  <p class="text-gray-400 text-xs">Select Date</p>
+                </div>
+                <div>
+                  <p class="font-medium text-black text-sm">Any Date</p>
+                </div>
+              </div>
+              <div>
+                <i>icon</i>
+              </div>
+              <div>
+                <i>icon</i>
+              </div>
+            </div>
+
+            <div class="px-2 items-center flex">
+              <button
+                class="bg-red-400 border-none px-4 py-3 rounded-lg text-xs text-white"
+              >
+                Go!
+              </button>
+            </div>
+          </div>
+
+          <div class="flex space-x-2">
+            <div>
+              <img src="" alt="clouds" />
+            </div>
+            <div class="text-5xl font-normal">23&deg;</div>
+            <div class="text-sm justify-center flex flex-col">
+              <div class="text-black font-medium">Kleiv</div>
+              <div class="text-gray-400">Ukraine</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List -->
+
+        <div class="mt-5">
+          <div class="grid md:grid-cols-5 gap-5">
+            <!-- one -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- two -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- three -->
+
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Four -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Five -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end -->
+          </div>
+
+          <!-- 2nd list -->
+          <div class="grid md:grid-cols-5 gap-5">
+            <!-- one -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- two -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- three -->
+
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Four -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Five -->
+            <div
+              class="flex flex-col space-y-4 max-w-sm shadow-xl z-10 p-6 rounded-lg"
+            >
+              <div class="flex justify-between w-full">
+                <div class="flex flex-col items-start justify-start">
+                  <p class="text-gray-900 pb-1 font-medium">Bahamas Island</p>
+                  <p class="text-gray-600 text-xs tracking-tighter pt-1">24th April - 2nd May, 2022</p>
+                  <p class="text-gray-400 text-xs pt-1">Category/Ocean</p>
+                </div>
+                <div class="flex items-start">icon</div>
+              </div>
+
+              <div class="w-full flex flex-col space-y-2">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-gray-600 text-xs pt-1">Average Temperature</p>
+                    <div class="w-10 border border-black"></div>
+                    <p class="text-gray-900 pb-1 font-medium">26&deg;C</p>
+                </div>
+                <div>
+                    <img src="../erin.jpg" alt=" " class="w-full rounded-lg">
+                </div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-400 text-xs pt-1">Total price</p>
+                        <p class="text-gray-900 pb-1 font-medium">&dollar;2 950 </p>
+                    </div>
+                    <div>
+                        <button class="bg-transparent border px-4 py-3 rounded-lg text-xs font-bold">Explore</button>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+
+        <!-- Try -->
+        
+      </div>
+    </main>
+  </body>
+</html>
+
+<!--  -->
+
+<!-- 
+
+     <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .content-hidden {
+        content-visibility: hidden;
+      }
+    }
+  </style>
+ -->
